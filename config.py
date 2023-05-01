@@ -7,7 +7,7 @@ import os
 from logging.handlers import RotatingFileHandler
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6286539446:AAEVFYM8PfJ1PYgVr1rRuDYTzcBVnNOwuyo")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 # API ID Anda dari my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "9774346"))
@@ -16,7 +16,7 @@ APP_ID = int(os.environ.get("APP_ID", "9774346"))
 API_HASH = os.environ.get("API_HASH", "a92aed7d74654a563af4b07efbcd88e9")
 
 # ID Channel Databas
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001422964183"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001884381775"))
 
 # OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "907544310"))
@@ -25,16 +25,16 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "907544310"))
 OWNER = os.environ.get("OWNER","Eror_404_NF")
 
 # Databasenya 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://awxqnloq:A871j1eJ9OHBUwyb00babO3uw3HWd_Dj@castor.db.elephantsql.com/awxqnloq")
+DB_URI = os.environ.get("DATABASE_URL", "")
 
 # Username CH & Group
 CHANNEL = os.environ.get("CHANNEL", "vvslh_pro")
 GROUP = os.environ.get("GROUP", "vvslh_pro")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL","-1001819120996"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL","-1001849407447"))
 
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001924093760"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001863371284"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -44,7 +44,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "907544310 1670927917").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "907544310 5722443726 5566485363").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
