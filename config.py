@@ -7,7 +7,7 @@ import os
 from logging.handlers import RotatingFileHandler
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6045280121:AAGhUv4nxfw5HIaWLPE90OBRMxUgRFqEf_Y")
 
 # API ID Anda dari my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "9774346"))
@@ -25,7 +25,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "907544310"))
 OWNER = os.environ.get("OWNER","Eror_404_NF")
 
 # Databasenya 
-DB_URI = os.environ.get("DATABASE_URL", "")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://tfzlimbd:lQkEbsVVvJGNWiEgyPewe0EuCj9QFUic@balarama.db.elephantsql.com/tfzlimbd")
 
 # Username CH & Group
 CHANNEL = os.environ.get("CHANNEL", "vvslh_pro")
